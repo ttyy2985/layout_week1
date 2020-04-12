@@ -49,16 +49,25 @@
 
 .container-fluid {
   width: 100%;
+  height: auto;
+  background-color: transparent;
+  color: inherit;
   overflow: hidden;
 }
 
 .container {
   width: 1200px;
+  height: auto;
+  background-color: transparent;
+  color: inherit;
   margin: 0 auto;
 }
 
 .container h1 {
   width: 288px;
+  height: auto;
+  background-color: transparent;
+  color: inherit;
   font-size: 80px;
   word-wrap: break-word;
   line-height: 90px;
@@ -69,15 +78,23 @@
   width: 100%;
   height: 2px;
   background-color: #000;
+  color: inherit;
 }
 
 .title-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   line-height: 45px;
   margin-bottom: 8px;
 }
@@ -100,25 +117,23 @@
   content: '';
   width: 1px;
   height: 68px;
+  background-color: #96A9C4;
+  color: inherit;
   position: absolute;
   left: 24px;
   top: 12px;
-  background-color: #96A9C4;
 }
 
 .text-container > :nth-child(n):before {
   content: "";
   width: 16px;
   height: 16px;
+  background-color: #96A9C4;
+  color: inherit;
   position: absolute;
   left: 16px;
   top: 9px;
   border-radius: 50%;
-  background-color: #96A9C4;
-}
-
-.text-container.profile > :nth-child(n):before {
-  top: 16px;
 }
 
 .text-container.profile > :last-child:before {
@@ -135,6 +150,8 @@
 .img-container {
   width: 324px;
   height: 324px;
+  background-color: transparent;
+  color: inherit;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 55px;
@@ -149,7 +166,9 @@
 .skill-container {
   position: relative;
   width: 100%;
+  height: auto;
   background-color: #415165;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,37 +179,44 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   padding: 24px 102px 56px 102px;
 }
 
 .skill-container .subtitle {
-  color: white;
+  color: #fff;
 }
 
 .skill-container .divider {
   width: 100%;
   height: 1px;
   background-color: #fff;
+  color: inherit;
 }
 
 .skill-container:before {
   content: '';
   width: 100vw;
   height: 360px;
+  background-color: #96A9C4;
+  color: inherit;
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: -10;
-  background-color: #96A9C4;
 }
 
 .skill-content {
   border-left: 1px solid #96A9C4;
   padding-left: 24px;
   width: 666px;
+  height: auto;
+  background-color: transparent;
+  color: inherit;
 }
 
 .skill-content .text {
@@ -206,8 +232,9 @@
 
 footer {
   width: 100%;
+  height: auto;
   background-color: #415165;
-  color: white;
+  color: #fff;
 }
 
 footer .container {
@@ -221,17 +248,21 @@ footer .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   padding: 24px 0 48px 0;
 }
 
 footer .container .subtitle {
-  color: white;
+  color: #fff;
 }
 
 footer .container .divider {
   width: 100%;
   height: 1px;
   background-color: #fff;
+  color: inherit;
 }
 
 footer .container .text {
