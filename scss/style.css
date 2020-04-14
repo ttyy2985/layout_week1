@@ -200,12 +200,12 @@
   font-size: 20px;
 }
 
-.container-fluid {
+.footer .container-fluid {
   background-color: #415165;
   color: #fff;
 }
 
-.container-fluid .container {
+.footer .container-fluid .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,17 +222,17 @@
   padding: 24px 0 48px 0;
 }
 
-.container-fluid .container .subtitle {
+.footer .container-fluid .container .subtitle {
   color: #fff;
 }
 
-.container-fluid .container .divider {
+.footer .container-fluid .container .divider {
   width: 100%;
   height: 1px;
   background-color: #fff;
 }
 
-.container-fluid .container .text {
+.footer .container-fluid .container .text {
   line-height: 36px;
   font-weight: 200;
 }
