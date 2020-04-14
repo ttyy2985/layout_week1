@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: 'Andale Mono','微軟正黑體', sans-serif;
+  font-family: "Andale Mono", "微軟正黑體", sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -61,10 +61,7 @@
 }
 
 .container h1 {
-  width: 288px;
-  height: auto;
   font-size: 80px;
-  word-wrap: break-word;
   line-height: 90px;
   margin-bottom: 24px;
 }
@@ -75,32 +72,19 @@
   background-color: #000;
 }
 
-.title-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+.title {
+  display: inline-block;
+  font-size: 32px;
+  margin-right: 16px;
   line-height: 45px;
   margin-bottom: 8px;
 }
 
-.title-container .title {
-  font-size: 32px;
-  margin-right: 16px;
-}
-
-.title-container .subtitle {
+.subtitle {
   font-size: 24px;
-  color: #A00404;
+  color: #a00404;
+  line-height: 45px;
+  margin-bottom: 8px;
 }
 
 .text-container {
@@ -108,10 +92,10 @@
 }
 
 .text-container:not(.profile):before {
-  content: '';
+  content: "";
   width: 1px;
   height: 68px;
-  background-color: #96A9C4;
+  background-color: #96a9c4;
   position: absolute;
   left: 24px;
   top: 12px;
@@ -121,7 +105,7 @@
   content: "";
   width: 16px;
   height: 16px;
-  background-color: #96A9C4;
+  background-color: #96a9c4;
   position: absolute;
   left: 16px;
   top: 9px;
@@ -186,10 +170,10 @@
 }
 
 .skill-container:before {
-  content: '';
+  content: "";
   width: 100vw;
   height: 360px;
-  background-color: #96A9C4;
+  background-color: #96a9c4;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -199,7 +183,7 @@
 }
 
 .skill-content {
-  border-left: 1px solid #96A9C4;
+  border-left: 1px solid #96a9c4;
   padding-left: 24px;
   width: 666px;
   height: auto;
@@ -216,12 +200,12 @@
   font-size: 20px;
 }
 
-footer .container-fluid {
+.container-fluid {
   background-color: #415165;
   color: #fff;
 }
 
-footer .container-fluid .container {
+.container-fluid .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,17 +222,17 @@ footer .container-fluid .container {
   padding: 24px 0 48px 0;
 }
 
-footer .container-fluid .container .subtitle {
+.container-fluid .container .subtitle {
   color: #fff;
 }
 
-footer .container-fluid .container .divider {
+.container-fluid .container .divider {
   width: 100%;
   height: 1px;
   background-color: #fff;
 }
 
-footer .container-fluid .container .text {
+.container-fluid .container .text {
   line-height: 36px;
   font-weight: 200;
 }

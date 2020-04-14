@@ -1,197 +1,196 @@
-$main-color:#96A9C4;
+$main-color: #96a9c4;
 $secondary-color: #415165;
 $white-color: #fff;
-$subtitle-color: #A00404;
-$black-color:#000;
+$subtitle-color: #a00404;
+$black-color: #000;
 
-@mixin size($width,$height:auto) {
-    width:$width;
-    height:$height;
+@mixin size($width, $height: auto) {
+    width: $width;
+    height: $height;
 }
 
-@mixin posAbs($left,$top) {
+@mixin posAbs($left, $top) {
     position: absolute;
     left: $left;
     top: $top;
 }
 
-@mixin dflex($justifyContent:start,$alignItems:start,$direction:row) {
+@mixin dflex($justifyContent: start, $alignItems: start, $direction: row) {
     display: flex;
     flex-direction: $direction;
     align-items: $alignItems;
     justify-content: $justifyContent;
 }
 
-*{
+* {
     // outline: 1px solid #000;
-    font-family: 'Andale Mono','微軟正黑體', sans-serif;
-    margin:0;
-    padding:0;
+    font-family: "Andale Mono", "微軟正黑體", sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.font-bold{
+.font-bold {
     font-weight: bold;
 }
-.mr-24{
+.mr-24 {
     margin-right: 24px;
 }
-.mb-8{
+.mb-8 {
     margin-bottom: 8px;
 }
-.mb-40{
+.mb-40 {
     margin-bottom: 40px;
 }
-.mb-22{
+.mb-22 {
     margin-bottom: 22px;
 }
-.mb-48{
+.mb-48 {
     margin-bottom: 48px;
 }
-.mb-16{
+.mb-16 {
     margin-bottom: 16px;
 }
-.mb-24{
+.mb-24 {
     margin-bottom: 24px;
 }
-.mb-32{
+.mb-32 {
     margin-bottom: 32px;
 }
-.mb-72{
+.mb-72 {
     margin-bottom: 72px;
 }
 
-.container-fluid{
+.container-fluid {
     padding-top: 48px;
     @include size(100%);
     overflow: hidden;
 }
-.container{
+.container {
     @include size(1200px);
     margin: 0 auto;
-    h1{
-        @include size(288px);
+    h1 {
         font-size: 80px;
-        word-wrap: break-word;
         line-height: 90px;
         margin-bottom: 24px;
     }
-    .divider{
-        @include size(100%,2px); 
+    .divider {
+        @include size(100%, 2px);
         background-color: $black-color;
-    }   
+    }
 }
 
-.title-container{
-    @include  dflex(start,center);
+// .title-container {
+// @include dflex(start, center);
+
+.title {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 16px;
     line-height: 45px;
     margin-bottom: 8px;
-    .title{
-        font-size: 32px;
-        margin-right: 16px;
-    }
-    .subtitle{
-        font-size: 24px;
-        color:$subtitle-color;
-    }
 }
+.subtitle {
+    font-size: 24px;
+    color: $subtitle-color;
+    line-height: 45px;
+    margin-bottom: 8px;
+}
+// }
 
-.text-container{
+.text-container {
     position: relative;
-    &:not(.profile):before{
-        content: '';
-        @include size(1px,68px);  //(第一個元素36+32)
-        background-color: $main-color;
-        @include posAbs(24px,12px); //left(圓的半徑+圓的paddingLeft)
-    }
-    & > :nth-child(n):before{
+    &:not(.profile):before {
         content: "";
-        @include size(16px,16px);
+        @include size(1px, 68px); //(第一個元素36+32)
         background-color: $main-color;
-        @include posAbs(16px,9px);    
+        @include posAbs(24px, 12px); //left(圓的半徑+圓的paddingLeft)
+    }
+    & > :nth-child(n):before {
+        content: "";
+        @include size(16px, 16px);
+        background-color: $main-color;
+        @include posAbs(16px, 9px);
         border-radius: 50%;
     }
-    &.profile > :last-child:before{
+    &.profile > :last-child:before {
         display: none;
     }
-    .text{
+    .text {
         position: relative;
         padding-left: 48px;
         line-height: 36px;
-        font-weight: 400; 
+        font-weight: 400;
     }
 }
 
-.img-container{
-    @include size(324px,324px);
+.img-container {
+    @include size(324px, 324px);
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 55px;
-    img{
+    img {
         display: block;
         width: auto;
         max-height: 100%;
     }
 }
 
-.skill-container{
+.skill-container {
     position: relative;
-    @include size(100%,auto);
+    @include size(100%, auto);
     background-color: $secondary-color;
     color: $white-color;
-    @include dflex(start,center,column);
+    @include dflex(start, center, column);
     padding: 24px 102px 56px 102px;
-    .subtitle{
-        color:$white-color;
+    .subtitle {
+        color: $white-color;
     }
-    .divider{
-        @include size(100%,1px);
+    .divider {
+        @include size(100%, 1px);
         background-color: $white-color;
-    }   
-    &:before{
-        content: '';
-        @include size(100vw,360px);
+    }
+    &:before {
+        content: "";
+        @include size(100vw, 360px);
         background-color: $main-color;
-        @include posAbs(50%, 50%);    
+        @include posAbs(50%, 50%);
         transform: translate(-50%, -50%);
         z-index: -10;
     }
 }
 
-.skill-content{
+.skill-content {
     border-left: 1px solid $main-color;
-    padding-left:24px;
+    padding-left: 24px;
     @include size(666px);
-    .text{
+    .text {
         line-height: 36px;
         font-weight: 200;
     }
-    .describe-text{
+    .describe-text {
         line-height: 30px;
         font-weight: 200;
         font-size: 20px;
     }
 }
 
-footer{
-    .container-fluid{
-        background-color: $secondary-color;
-        color:$white-color;
-        .container{
-            @include dflex(start,center,column);
-            padding: 24px 0 48px 0;
-            .subtitle{
-                color: $white-color;
-            }
-            .divider{
-                @include size(100%,1px);
-                background-color: $white-color;
-            }
-            .text{
-                line-height: 36px;
-                font-weight: 200;
-            }  
+.container-fluid {
+    background-color: $secondary-color;
+    color: $white-color;
+    .container {
+        @include dflex(start, center, column);
+        padding: 24px 0 48px 0;
+        .subtitle {
+            color: $white-color;
+        }
+        .divider {
+            @include size(100%, 1px);
+            background-color: $white-color;
+        }
+        .text {
+            line-height: 36px;
+            font-weight: 200;
         }
     }
-
 }
