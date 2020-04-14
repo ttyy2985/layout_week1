@@ -179,7 +179,8 @@ $black-color: #000;
     background-color: $secondary-color;
     color: $white-color;
     .container {
-        @include dflex(start, center, column);
+        text-align: center;
+        margin: 0 auto;
         padding: 24px 0 48px 0;
         .subtitle {
             color: $white-color;
