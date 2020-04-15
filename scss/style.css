@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: "Andale Mono", "微軟正黑體", sans-serif;
+  font-family: 'Andale Mono', '微軟正黑體', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -73,18 +73,22 @@
 }
 
 .title {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 32px;
-  margin-right: 16px;
   line-height: 45px;
   margin-bottom: 8px;
 }
 
-.subtitle {
+.title .subtitle {
   font-size: 24px;
   color: #a00404;
   line-height: 45px;
-  margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 .text-container {
@@ -92,7 +96,7 @@
 }
 
 .text-container:not(.profile):before {
-  content: "";
+  content: '';
   width: 1px;
   height: 68px;
   background-color: #96a9c4;
@@ -102,7 +106,7 @@
 }
 
 .text-container > :nth-child(n):before {
-  content: "";
+  content: '';
   width: 16px;
   height: 16px;
   background-color: #96a9c4;
@@ -170,7 +174,7 @@
 }
 
 .skill-container:before {
-  content: "";
+  content: '';
   width: 100vw;
   height: 360px;
   background-color: #96a9c4;
@@ -211,7 +215,13 @@
   padding: 24px 0 48px 0;
 }
 
-.footer .container-fluid .container .subtitle {
+.footer .container-fluid .container .title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .container-fluid .container .title .subtitle {
   color: #fff;
 }
 
