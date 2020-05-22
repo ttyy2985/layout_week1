@@ -5,14 +5,15 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title 作業week-1
         link(rel="stylesheet", href="../scss/style.css")
+        link(rel="stylesheet", href="https://unpkg.com/aos@2.3.1/dist/aos.css")
     body
         .container-fluid
-            section.container
+            section.container(data-aos="fade-right" data-aos-offset="300" data-aos-delay="500" data-aos-easing="ease-in-sine")
                 h1 Joanne Chen
                 .divider.mb-48 
                 .img-container
                     img(src="../img/photo.png", alt="")
-            section.container
+            section.container(data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="500" data-aos-anchor-placement="top-bottom")
                 .title-container
                     span.title 個人資料
                     span.subtitle PROFILE
@@ -30,7 +31,7 @@ html(lang="en")
                         | 獨立接案，內容涵蓋： 
                         br
                         | 品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。
-            section.container
+            section.container(data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" data-aos-anchor-placement="top-bottom")
                 .title-container
                     span.title 學歷
                     span.subtitle EDUCATION
@@ -53,7 +54,7 @@ html(lang="en")
                         h2.text C4D
                         h2.text Adobe Premiere
                         h2.text 語言：中文、英文
-            section.container
+            section.container(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0")
                 .title-container
                     span.title 工作經驗
                     span.subtitle WORK EXPERIENCE
@@ -74,7 +75,7 @@ html(lang="en")
                     img.mb-8(src="../img/treelogo.png", alt="")
                     p.describe-text.mb-72 擔任外場及吧台服務生，學習咖啡相關知識。
         footer
-            section.container
+            section.container( data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000")
                 .title-container.mb-8
                     span.title 聯絡方式
                     span.subtitle CONTACT METHOD
@@ -87,5 +88,7 @@ html(lang="en")
                     img.mr-24(src="../img/facebook.svg", alt="")
                     img.mr-24(src="../img/instagram.svg", alt="")
                     img(src="../img/line.svg", alt="")
-
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script.
+            AOS.init();
 
