@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 html(lang="en")
     head
         meta(charset="UTF-8")
@@ -8,14 +7,15 @@ html(lang="en")
         link(rel="stylesheet", href="https://unpkg.com/aos@2.3.1/dist/aos.css")
     body
         .container-fluid
-            section.container(data-aos="fade-right" data-aos-offset="300" data-aos-delay="500" data-aos-easing="ease-in-sine")
-                h1 Joanne Chen
+            section.container(data-aos="fade-right" data-aos-offset="300" data-aos-delay="500"  data-aos-duration="1500" data-aos-easing="ease-in-sine")
+                h1 Joanne
+                    br
+                    | Chen
                 .divider.mb-48 
                 .img-container
                     img(src="../img/photo.png", alt="")
-            section.container(data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="500" data-aos-anchor-placement="top-bottom")
-                .title-container
-                    span.title 個人資料
+            section.container(data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500")
+                h2.title 個人資料
                     span.subtitle PROFILE
                 .divider.mb-16
                 .text-container.profile
@@ -32,8 +32,7 @@ html(lang="en")
                         br
                         | 品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。
             section.container(data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" data-aos-anchor-placement="top-bottom")
-                .title-container
-                    span.title 學歷
+                h2.title 學歷
                     span.subtitle EDUCATION
                 .divider.mb-16
                 .text-container 
@@ -42,8 +41,8 @@ html(lang="en")
                     h2.text.mb-72
                         | 國立六腳高級中學 美術班 | 2013－2016
                 .skill-container.mb-72
-                    .title-container
-                        span.title 技能
+                    //- .title-container
+                    h2.title 技能
                         span.subtitle SKILLS
                     .divider.mb-40
                     .skill-content
@@ -55,8 +54,7 @@ html(lang="en")
                         h2.text Adobe Premiere
                         h2.text 語言：中文、英文
             section.container(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0")
-                .title-container
-                    span.title 工作經驗
+                h2.title 工作經驗
                     span.subtitle WORK EXPERIENCE
                 .divider.mb-22
                 .skill-content.mb-72
@@ -74,20 +72,20 @@ html(lang="en")
                         b Simtree 興趣咖啡 工讀生 | 2018－2019
                     img.mb-8(src="../img/treelogo.png", alt="")
                     p.describe-text.mb-72 擔任外場及吧台服務生，學習咖啡相關知識。
-        footer
-            section.container( data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000")
-                .title-container.mb-8
-                    span.title 聯絡方式
-                    span.subtitle CONTACT METHOD
-                .divider.mb-32
-                h2.text.mb-16 Mail：xxxd@hexschool.com
-                h2.text.mb-16 Phone：0910123456
-                h2.text.mb-16 Kaohsiung, Taiwan
-                h2.text.mb-16 作品連結：https://www.behance.net/xxxdddddd
-                .contact-container
-                    img.mr-24(src="../img/facebook.svg", alt="")
-                    img.mr-24(src="../img/instagram.svg", alt="")
-                    img(src="../img/line.svg", alt="")
+        footer.footer
+            .container-fluid( data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000")
+                section.container
+                    h2.title.mb-8 聯絡方式
+                        span.subtitle CONTACT METHOD
+                    .divider.mb-32
+                    h2.text.mb-16 Mail：xxxd@hexschool.com
+                    h2.text.mb-16 Phone：0910123456
+                    h2.text.mb-16 Kaohsiung, Taiwan
+                    h2.text.mb-16 作品連結：https://www.behance.net/xxxdddddd
+                    .contact-container
+                        img.mr-24(src="../img/facebook.svg", alt="")
+                        img.mr-24(src="../img/instagram.svg", alt="")
+                        img(src="../img/line.svg", alt="")
         script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
         script.
             AOS.init();

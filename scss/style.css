@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: 'Andale Mono','微軟正黑體';
+  font-family: 'Andale Mono', '微軟正黑體', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -51,26 +51,17 @@
   padding-top: 48px;
   width: 100%;
   height: auto;
-  background-color: transparent;
-  color: inherit;
   overflow: hidden;
 }
 
 .container {
   width: 1200px;
   height: auto;
-  background-color: transparent;
-  color: inherit;
   margin: 0 auto;
 }
 
 .container h1 {
-  width: 288px;
-  height: auto;
-  background-color: transparent;
-  color: inherit;
   font-size: 80px;
-  word-wrap: break-word;
   line-height: 90px;
   margin-bottom: 24px;
 }
@@ -79,35 +70,25 @@
   width: 100%;
   height: 2px;
   background-color: #000;
-  color: inherit;
 }
 
-.title-container {
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  font-size: 32px;
   line-height: 45px;
   margin-bottom: 8px;
 }
 
-.title-container .title {
-  font-size: 32px;
-  margin-right: 16px;
-}
-
-.title-container .subtitle {
+.title .subtitle {
   font-size: 24px;
-  color: #A00404;
+  color: #a00404;
+  line-height: 45px;
+  margin-left: 16px;
 }
 
 .text-container {
@@ -118,19 +99,17 @@
   content: '';
   width: 1px;
   height: 68px;
-  background-color: #96A9C4;
-  color: inherit;
+  background-color: #96a9c4;
   position: absolute;
   left: 24px;
   top: 12px;
 }
 
 .text-container > :nth-child(n):before {
-  content: "";
+  content: '';
   width: 16px;
   height: 16px;
-  background-color: #96A9C4;
-  color: inherit;
+  background-color: #96a9c4;
   position: absolute;
   left: 16px;
   top: 9px;
@@ -151,8 +130,6 @@
 .img-container {
   width: 324px;
   height: 324px;
-  background-color: transparent;
-  color: inherit;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 55px;
@@ -194,15 +171,13 @@
   width: 100%;
   height: 1px;
   background-color: #fff;
-  color: inherit;
 }
 
 .skill-container:before {
   content: '';
   width: 100vw;
   height: 360px;
-  background-color: #96A9C4;
-  color: inherit;
+  background-color: #96a9c4;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -212,12 +187,10 @@
 }
 
 .skill-content {
-  border-left: 1px solid #96A9C4;
+  border-left: 1px solid #96a9c4;
   padding-left: 24px;
   width: 666px;
   height: auto;
-  background-color: transparent;
-  color: inherit;
 }
 
 .skill-content .text {
@@ -231,42 +204,34 @@
   font-size: 20px;
 }
 
-footer {
-  width: 100%;
-  height: auto;
+.footer .container-fluid {
   background-color: #415165;
   color: #fff;
 }
 
-footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+.footer .container-fluid .container {
+  text-align: center;
+  margin: 0 auto;
   padding: 24px 0 48px 0;
 }
 
-footer .container .subtitle {
+.footer .container-fluid .container .title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .container-fluid .container .title .subtitle {
   color: #fff;
 }
 
-footer .container .divider {
+.footer .container-fluid .container .divider {
   width: 100%;
   height: 1px;
   background-color: #fff;
-  color: inherit;
 }
 
-footer .container .text {
+.footer .container-fluid .container .text {
   line-height: 36px;
   font-weight: 200;
 }
